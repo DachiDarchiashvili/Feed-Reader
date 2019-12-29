@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>NU - Algemeen</title>
+        <link>https://www.nu.nl/algemeen</link>
+        <description>Het laatste nieuws het eerst op NU.nl</description>
+        <atom:link href="https://www.nu.nl/rss/Algemeen" rel="self"></atom:link>
+        <language>nl-nl</language>
+        <copyright>Copyright (c) 2019, NU</copyright>
+        <lastBuildDate>Sat, 28 Dec 2019 13:44:53 +0100</lastBuildDate>
+        <ttl>60</ttl>
+        <atom:logo>
+            https://www.nu.nl/algemeenstatic/img/atoms/images/logos/rss-logo-250x40.png
+        </atom:logo>
+        <item>
+            <title>Meeste Nederlanders weten niet wat te doen bij oogletsel door
+                vuurwerk
+            </title>
+            <link>
+                https://www.nu.nl/binnenland/6020483/meeste-nederlanders-weten-niet-wat-te-doen-bij-oogletsel-door-vuurwerk.html
+            </link>
+            <description>Bijna drie kwart van de Nederlanders weet niet wat ze
+                moeten doen bij oogletsel door vuurwerk, blijkt uit onderzoek
+                van het Rode Kruis en het Oogziekenhuis Rotterdam. Daarnaast kan
+                slechts vier op de tien eerste hulp verlenen.
+            </description>
+            <pubDate>Sat, 28 Dec 2019 13:13:52 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6020483/</guid>
+            <enclosure length="0" type="image/jpeg"
+                       url="https://media.nu.nl/m/t8oxc4nafqok_sqr256.jpg/meeste-nederlanders-weten-niet-wat-te-doen-bij-oogletsel-door-vuurwerk.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Binnenland</category>
+            <dc:creator>NU.nl</dc:creator>
+            <dc:rights>copyright photo: Pro Shots</dc:rights>
+            <atom:link
+                    href="https://nu.nl/economie/6020309/nederlanders-schaffen-weer-meer-vuurwerk-in-voorverkoop-aan.html"
+                    rel="related"
+                    title="Nederlanders schaffen weer meer vuurwerk in voorverkoop aan"
+                    type="text/html"></atom:link>
+            <atom:link
+                    href="https://nu.nl/binnenland/5653205/rode-kruis-jongeren-weten-niet-ze-moeten-helpen-bij-vuurwerkletsel.html"
+                    rel="related"
+                    title="Rode Kruis: 'Jongeren weten niet hoe ze moeten helpen bij vuurwerkletsel'"
+                    type="text/html"></atom:link>
+            <atom:link
+                    href="https://nu.nl/binnenland/5644529/kwart-van-getest-consumentenvuurwerk-niet-veilig-genoeg.html"
+                    rel="related"
+                    title="Kwart van getest consumentenvuurwerk niet veilig genoeg"
+                    type="text/html"></atom:link>
+        </item>
+        <item>
+            <title>Uitgedroogde koala drinkt waterfles van Australische fietser
+                leeg
+            </title>
+            <link>
+                https://www.nu.nl/buitenland/6020516/uitgedroogde-koala-drinkt-waterfles-van-australische-fietser-leeg.html
+            </link>
+            <description>Een fietser in het zuiden van Australië heeft vrijdag
+                een uitgedroogde koala geholpen. De vrouw liet het dier haar
+                waterfles volledig leegdrinken.
+            </description>
+            <pubDate>Sat, 28 Dec 2019 13:44:53 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6020516/</guid>
+            <enclosure length="0" type="image/jpeg"
+                       url="https://media.nu.nl/m/e5zxjsvaw2rj_sqr256.jpg/uitgedroogde-koala-drinkt-waterfles-van-australische-fietser-leeg.jpg"></enclosure>
+            <category>Algemeen</category>
+            <category>Buitenland</category>
+            <dc:creator>NU.nl/Marko Mikic</dc:creator>
+        </item>
+        <item>
+            <title>Rijksten ter wereld zagen vermogen met een kwart stijgen in
+                2019
+            </title>
+            <link>
+                https://www.nu.nl/economie/6020481/rijksten-ter-wereld-zagen-vermogen-met-een-kwart-stijgen-in-2019.html
+            </link>
+            <description>De vijfhonderd rijkste mensen hebben hun vermogen dit
+                jaar met een kwart zien groeien. In totaal hebben de rijksten
+                ter wereld aan het eind van 2019 een vermogen van 5,9 biljoen
+                dollar (5,28 biljoen euro), 1,2 biljoen dollar meer dan een jaar
+                geleden, berekende persbureau &lt;em&gt;&lt;a
+                href="https://www.bloomberg.com/news/articles/2019-12-27/world-s-richest-gain-1-2-trillion-as-kylie-baby-sharks-prosper?srnd=premium-europe"
+                target="_blank"&gt;Bloomberg&lt;/a&gt;&lt;/em&gt;.
+            </description>
+            <pubDate>Sat, 28 Dec 2019 13:12:40 +0100</pubDate>
+            <guid isPermaLink="false">https://www.nu.nl/-/6020481/</guid>
+            <enclosure length="0" type="image/jpeg"
+                       url="https://media.nu.nl/m/89wxlbeaf8r8_sqr256.jpg/rijksten-ter-wereld-zagen-vermogen-met-een-kwart-stijgen-in-2019.jpg"></enclosure>
+            <category>Economie</category>
+            <category>Algemeen</category>
+            <dc:creator>NU.nl</dc:creator>
+            <dc:rights>copyright photo: Reuters</dc:rights>
+        </item>
+    </channel>
+</rss>

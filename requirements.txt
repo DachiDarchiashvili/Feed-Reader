@@ -1,0 +1,5 @@
+aiohttp==3.6.2
+aiopg==1.0.0
+asynctest==0.13.0
+Django==3.0.1
+uwsgi

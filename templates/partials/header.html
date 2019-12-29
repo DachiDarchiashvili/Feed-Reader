@@ -1,0 +1,26 @@
+<nav>
+    <div>
+        <ul class="header">
+            <li>
+                <a href="{% url 'index' %}" {% if current_page == 'dashboard' %}class="active"{% endif %}>
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'feeds:list' %}" {% if current_page == 'feeds' %}class="active"{% endif %}>
+                    Feeds
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'users:profile' %}" {% if current_page == 'profile' %}class="active"{% endif %}>
+                    Profile
+                </a>
+            </li>
+            <li>
+                <a href="{% url 'users:logout' %}">
+                    Log Out
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>

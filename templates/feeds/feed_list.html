@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block content %}
+    <p style="margin-bottom: 20px;font-weight: bold;display: inline-block;margin-right: 20px;">
+        Your feeds</p>
+    <button class="btn btn-primary btn-redirect"
+            type="button" data-redirect-url="{% url 'feeds:create' %}">(+) Add
+        New
+    </button>
+    <hr>
+    <a style="margin-right: 10px;"
+       href="{% url 'feeds:feed_items_fav' %}">Browse All Favorite Feed
+        Items</a>
+    <a style="margin-right: 10px;"
+       href="{% url 'feeds:feed_items_unread' %}">Browse All Unread Feed
+        Items</a>
+    <a style="margin-right: 10px;" href="{% url 'feeds:feed_item_list' %}">
+        Browse All Feed Items</a>
+    <hr>
+    <h5>Or browse feed items by feeds</h5>
+    <hr>
+    <table style="width:100%">
+        {% for feed in feeds %}
+            <tr>
+                <td style="width: 110px">
+                    {% if feed.image %}
+                        <img class="feed-image"
+                             src="{{ feed.image }}">
+                    {% else %}
+                        <p>No image available</p>
+                    {% endif %}
+                </td>
+                <td>
+                    <h3>
+                        <a href="{{ feed.link }}">{{ feed.custom_title|default:feed.link }}</a>
+                    </h3>
+                    <h5>
+                        Title: {{ feed.title|default:'N/A' }}
+                    </h5>
+                    <hr>
+                    <p>{{ feed.description|default:'N/A'|safe }}</p>
+                    <hr>
+                    {% if feed.copyright %}
+                        <p class="feed-ol bold">{{ feed.copyright }}</p>{% endif %}
+                    <p class="feed-ol"><span
+                            class="bold">Build Date:</span> {{ feed.last_build_date|default:'N/A' }}
+                    </p>
+                    {% if feed.language %}
+                        <p class="feed-ol"><span
+                                class="bold">Lang:</span> {{ feed.language }}
+                        </p>{% endif %}
+                    <p class="feed-ol"><span
+                            class="bold">Update interval:</span> {{ feed.ttl }}
+                    </p>
+                    <hr>
+                    <p class="feed-ol bold">Submenu: </p>
+                    <a style="margin-right: 10px;"
+                       href="{% url 'feeds:feed_feed_items_fav' pk=feed.id %}">Favorites</a>
+                    <a style="margin-right: 10px;"
+                       href="{% url 'feeds:feed_feed_items_unread' pk=feed.id %}">Unreads ({{ feed.unread_qty }})</a>
+                    <a style="margin-right: 10px;"
+                       href="{% url 'feeds:feed_feed_items_list' pk=feed.id %}">All</a>
+                    <hr>
+                    <p class="feed-ol bold">Actions: </p>
+                    {% if feed.terminated %}
+                    <button class="btn btn-success btn-redirect" type="button"
+                            data-redirect-url="{% url 'feeds:tgl_term' feed.id %}">Enable
+                    </button>
+                    {% else %}
+                    <button class="btn btn-primary btn-redirect" type="button"
+                            data-redirect-url="{% url 'feeds:pull_now' feed.id %}">Pull now
+                    </button>
+                    <button class="btn btn-warning btn-redirect" type="button"
+                            data-redirect-url="{% url 'feeds:tgl_term' feed.id %}">Disable
+                    </button>
+                    {% endif %}
+                    <button class="btn btn-primary btn-redirect" type="button"
+                            data-redirect-url="{% url 'feeds:edit' feed.id %}">
+                        Edit
+                    </button>
+                    <button class="btn btn-danger btn-redirect" type="button"
+                            data-redirect-url="{% url 'feeds:delete' feed.id %}">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        {% empty %}
+            <tr>
+                <td>No feeds to display</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    {% include 'feeds/partials/pagination.html' %}
+{% endblock %}

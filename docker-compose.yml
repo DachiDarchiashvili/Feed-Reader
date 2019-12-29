@@ -1,0 +1,70 @@
+version: '3.7'
+
+services:
+  feed_reader:
+    image: feed_reader:latest
+    container_name: feed_reader
+    restart: always
+    expose:
+      - 8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - feed_reader_data:/src/feed_reader
+    networks:
+      - shared_net
+    depends_on:
+      - pgdb
+
+  nginx:
+    image: nginx:latest
+    container_name: fr_nginx
+    restart: always
+    expose:
+      - 80
+    ports:
+      - "80:80"
+    volumes:
+      - ./conf/feed_reader.conf:/etc/nginx/conf.d/default.conf
+      - feed_reader_data:/src/feed_reader
+    networks:
+      - shared_net
+    depends_on:
+      - feed_reader
+
+  pgdb:
+    image: postgres:latest
+    container_name: feed_reader_db
+    restart: always
+    environment:
+      POSTGRES_USER: gocha
+      POSTGRES_PASSWORD: qwert5432
+      POSTGRES_DB: feed_reader_db
+    networks:
+      - shared_net
+    volumes:
+      - feed_reader_db:/var/lib/postgresql/data
+
+  feed_fetcher:
+    image: feed_reader:latest
+    container_name: feed_fetcher
+    restart: always
+    volumes:
+      - feed_reader_data:/src/feed_reader
+    depends_on:
+      - feed_reader
+    networks:
+      - shared_net
+    command: sh -c "python manage.py start_fetcher_workers --settings feed_reader.settings.prod"
+
+
+networks:
+  shared_net:
+    driver: overlay
+
+
+volumes:
+    feed_reader_data:
+        driver: local
+    feed_reader_db:
+        driver: local

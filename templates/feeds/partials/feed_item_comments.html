@@ -1,0 +1,12 @@
+<hr>
+<button class="btn btn-primary btn-redirect" type="button" data-redirect-url="{% url 'feeds:comment_create' fid=feed_item.feed_id iid=feed_item.id %}">Add new comment</button>
+<hr>
+{% for comment in comments %}
+<div>
+    <p>{{ comment.text|safe }}</p>
+    <p>Date: {{ comment.date_created|date:"M d, Y m:h:s" }}</p>
+    <p class="feed-ol">Actions: </p>
+    <a href="{% url 'feeds:comment_edit' fid=feed_item.feed_id iid=feed_item.id pk=comment.id %}">Edit</a>
+    <a href="{% url 'feeds:comment_delete' fid=feed_item.feed_id iid=feed_item.id pk=comment.id %}">Delete</a>
+</div>
+{% endfor %}

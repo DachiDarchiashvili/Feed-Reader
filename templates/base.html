@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yet Another Simple Feed Reader</title>
+    <meta name="author" content="Dachi Darchiashvili">
+    <style>
+        ul.header .active {
+            background-color: #0c509c;
+            color: white;
+        }
+        ul.header {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            float: right;
+        }
+        ul.header > li {
+            float: left;
+        }
+        ul.header > li a {
+            display: block;
+            padding: 8px;
+            color: #000;
+            text-decoration: none;
+        }
+        ul.header > li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        ul.pagination .active {
+            background-color: #0c509c;
+            color: white;
+        }
+        ul.pagination {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+        ul.pagination > li {
+            display: inline-block;
+            margin: auto;
+        }
+        ul.pagination > li a {
+            display: block;
+            padding: 8px;
+            color: #000;
+            text-decoration: none;
+        }
+        ul.pagination > li a:hover {
+            background-color: #555;
+            color: white;
+        }
+        ul.pagination > li a.disabled:hover {
+            cursor: not-allowed;
+        }
+        .feed-image {
+            max-height: 100px;
+            max-width: 100px;
+        }
+        .feed-ol {
+            display: inline-block;
+            margin: 0px 10px 0px 0px;
+            font-size: small;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .btn {
+            opacity: 0.5;
+            padding: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover {
+            opacity: 1;
+        }
+        .btn:disabled:hover {
+            opacity: 0.5;
+        }
+        .btn-primary {
+            background-color: #0c509c;
+        }
+        .btn-success {
+            background-color: darkgreen;
+        }
+        .btn-danger {
+            background-color: maroon;
+        }
+        .btn-warning {
+            background-color: chocolate;
+        }
+        :disabled {
+            cursor: not-allowed;
+        }
+        .star {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .checked {
+            color: orange;
+        }
+        .errornote {
+            background-color: burlywood;
+            max-width: 300px;
+        }
+        .form-row {
+            margin: 5px 0;
+        }
+        .errorlist {
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+{% block partials %}
+    {% include "partials/header.html" %}
+{% endblock %}
+{% block content %}{% endblock %}
+<script src="{% static "lib/js/jquery/jquery-3.4.1.min.js" %}"></script>
+<script src="{% static "js/script.js" %}"></script>
+</body>
+</html>

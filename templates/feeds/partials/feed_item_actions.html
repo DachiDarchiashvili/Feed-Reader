@@ -1,0 +1,13 @@
+<p class="feed-ol bold">Actions: </p>
+<button class="btn-ajax-toggle" type="button"
+        data-request-url="{% url 'feeds:feed_item_fav' fid=feed_item.feed_id pk=feed_item.id %}"
+        data-action-type="mark-favorite">
+    <span class="star{% if feed_item.favorite %} checked{% endif %}">★</span>
+</button>
+{% if feed_item.read %}
+<button class="btn btn-warning btn-ajax-toggle" type="button"
+        data-request-url="{% url 'feeds:feed_item_mark_unread' fid=feed_item.feed_id pk=feed_item.id %}"
+        data-action-type="mark-unread">
+    Mark as unread
+</button>
+{% endif %}

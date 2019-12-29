@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+    <table style="width:100%">
+        <tr>
+            {% include 'feeds/partials/feed_item.html' %}
+        </tr>
+    </table>
+    {% include 'feeds/partials/feed_item_comments.html' %}
+    <hr>
+    {% include 'feeds/partials/pagination.html' %}
+{% endblock %}

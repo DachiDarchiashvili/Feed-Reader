@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Edit profile</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="btn btn-primary" type="submit" value="Save">
+        <button class="btn btn-warning btn-redirect" type="button" data-redirect-url="{% url 'users:profile' %}">Back</button>
+    </form>
+{% endblock %}

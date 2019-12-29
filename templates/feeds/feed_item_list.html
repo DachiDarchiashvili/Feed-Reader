@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+    <p style="margin-bottom: 20px;font-weight: bold;display: inline-block;margin-right: 20px;">Feed Items</p>
+    <hr>
+    <table style="width:100%">
+        {% for feed_item in feed_items %}
+            <tr>
+                {% include 'feeds/partials/feed_item.html' with showing_in_list=True %}
+            </tr>
+        {% empty %}
+            <tr>
+                <td>No feed items to display</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <hr>
+    {% include 'feeds/partials/pagination.html' %}
+{% endblock %}

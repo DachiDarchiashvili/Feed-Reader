@@ -1,0 +1,43 @@
+<td style="width: 110px">
+    {% if feed_item.enclosure %}
+        <img class="feed-image"
+             src="{{ feed_item.enclosure }}">
+    {% else %}
+        <p>No image available</p>
+    {% endif %}
+</td>
+<td>
+    <h3>
+        <a href="{{ feed_item.link }}">{{ feed_item.title }}</a>
+        {% if showing_in_list %}
+        <a href="{% url 'feeds:feed_item_detail' fid=feed_item.feed_id pk=feed_item.id %}" style="font-size: 12px;">Open with comments</a>
+        {% endif %}
+    </h3>
+    <p class="feed-ol"><span
+            class="bold">Author: </span>{{ feed_item.author|default:'N/A' }}</p>
+    {% if not showing_in_list %}
+    <hr>
+    <p>{{ feed_item.description|safe|default:'Not provided' }}</p>
+    <hr>
+    {% for cat in feed_item.category %}
+        <p class="feed-ol bold">{{ cat }}</p>
+    {% endfor %}
+    <hr>
+    <p class="feed-ol"><span
+            class="bold">Published on: </span>{{ feed_item.pub_date|default:'Not provided' }}
+    </p>
+    <hr>
+    <p class="feed-ol"><span
+            class="bold">Creator: </span>{{ feed_item.creator }}</p>
+    <p class="feed-ol"><span
+            class="bold">Rights: </span>{{ feed_item.rights }}</p>
+    <hr>
+    {% for link, label in feed_item.related_links %}
+        <a href="{{ link }}">{{ label }}</a>
+    {% empty %}
+        <p>No links</p>
+    {% endfor %}
+    {% endif %}
+    <hr>
+    {% include "feeds/partials/feed_item_actions.html" %}
+</td>

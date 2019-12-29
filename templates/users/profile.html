@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <p>Username: {{ user.username }}</p>
+    <p>First Name: {{ user.first_name|default:"Empty" }}</p>
+    <p>Last Name: {{ user.last_name|default:"Empty" }}</p>
+    <p>Email address: {{ user.email|default:"Empty" }}</p>
+    <p>Date joined: {{ user.date_joined|date:"N Y" }}</p>
+    <hr>
+    <a href="{% url 'users:update' %}">Edit Profile</a><br>
+    <a href="{% url 'users:set_passwd' %}">Change Password</a><br>
+    <a href="{% url 'users:delete' %}">Delete Account</a>
+{% endblock %}

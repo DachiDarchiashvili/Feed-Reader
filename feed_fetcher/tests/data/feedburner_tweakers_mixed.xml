@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+    <channel>
+        <copyright>Copyright 1998 - 2019 DPG Online Services B.V.</copyright>
+        <pubDate>Sat, 28 Dec 2019 12:52:00 GMT</pubDate>
+        <lastBuildDate>Sat, 28 Dec 2019 12:52:00 GMT</lastBuildDate>
+        <docs>https://tweakers.net/reviews/76</docs>
+        <description>Tweakers is de grootste hardwaresite en techcommunity van
+            Nederland.
+        </description>
+        <image>
+            <link>https://tweakers.net/</link>
+            <title>Tweakers</title>
+            <url>https://tweakimg.net/g/if/logo.gif</url>
+            <height/>
+            <width/>
+            <description>Tweakers</description>
+        </image>
+        <language>nl-nl</language>
+        <link>https://tweakers.net/</link>
+        <title>Tweakers Mixed RSS Feed</title>
+        <webMaster>gathering@tweakers.net</webMaster>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self"
+                     type="application/rss+xml"
+                     href="http://feeds.feedburner.com/tweakers/mixed"/>
+        <feedburner:info
+                xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0"
+                uri="tweakers/mixed"/>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub"
+                     href="http://pubsubhubbub.appspot.com/"/>
+        <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots"
+                    content="noindex"/>
+        <item>
+            <title>Turkije gaat zelf geproduceerde elektrische auto's in 2022 op
+                de markt brengen
+            </title>
+            <link>
+                https://tweakers.net/nieuws/161604/turkije-gaat-zelf-geproduceerde-elektrische-autos-in-2022-op-de-markt-brengen.html
+            </link>
+            <description>Turkije heeft twee prototype elektrische auto's
+                onthuld. Het Turkse merk TOGG gaat in ieder geval een suv en
+                sedan op de markt brengen in 2022. De wagens zouden een
+                actieradius van 500 kilometer hebben op een enkele acculading.&lt;img
+                src="http://feeds.feedburner.com/~r/tweakers/mixed/~4/3MmJvG7iPsA"
+                height="1" width="1" alt=""/&gt;
+            </description>
+            <author>Mark Hendrikman</author>
+            <category>Nieuws - : Beeld en geluid / Cartech</category>
+            <comments>
+                https://tweakers.net/nieuws/161604/turkije-gaat-zelf-geproduceerde-elektrische-autos-in-2022-op-de-markt-brengen.html#reacties
+            </comments>
+            <guid isPermaLink="false">https://tweakers.net/nieuws/161604</guid>
+            <pubDate>Sat, 28 Dec 2019 11:36:35 GMT</pubDate>
+        </item>
+        <item>
+            <title>Spotify doet vanaf 2020 politieke advertenties ook in de
+                ban
+            </title>
+            <link>
+                https://tweakers.net/nieuws/161600/spotify-doet-vanaf-2020-politieke-advertenties-ook-in-de-ban.html
+            </link>
+            <description>Spotify gaat vanaf vroeg in 2020 de de verkoop van
+                politieke advertenties schorsen. Het bedrijf doet dit omdat het
+                zegt momenteel niet de capaciteit heeft om de advertenties te
+                controleren. De maatregel geldt alleen in de VS, omdat Spotify
+                geen politieke advertenties biedt in andere landen.&lt;img
+                src="http://feeds.feedburner.com/~r/tweakers/mixed/~4/e9_HXCm6sz8"
+                height="1" width="1" alt=""/&gt;
+            </description>
+            <author>Mark Hendrikman</author>
+            <category>Nieuws - : IT Pro / Internet</category>
+            <comments>
+                https://tweakers.net/nieuws/161600/spotify-doet-vanaf-2020-politieke-advertenties-ook-in-de-ban.html#reacties
+            </comments>
+            <guid isPermaLink="false">https://tweakers.net/nieuws/161600</guid>
+            <pubDate>Sat, 28 Dec 2019 09:31:03 GMT</pubDate>
+        </item>
+        <item>
+            <title>Huawei raakt verstrikt in wereldpolitiek</title>
+            <link>
+                https://tweakers.net/reviews/7518/huawei-raakt-verstrikt-in-wereldpolitiek.html
+            </link>
+            <description>Dit jaar raakten diverse grote bedrijven verstrikt in
+                wereldpolitieke schaakspellen. Tweakers blikt terug op deze
+                gebeurtenissen.&lt;img
+                src="http://feeds.feedburner.com/~r/tweakers/mixed/~4/flabACNpfI4"
+                height="1" width="1" alt=""/&gt;
+            </description>
+            <author>Arnoud Wokke</author>
+            <category>Achtergrond - : IT Pro / Politiek en recht</category>
+            <comments>
+                https://tweakers.net/reviews/7518/last/huawei-raakt-verstrikt-in-wereldpolitiek.html#reacties
+            </comments>
+            <guid isPermaLink="false">https://tweakers.net/reviews/7518</guid>
+            <pubDate>Sat, 28 Dec 2019 05:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

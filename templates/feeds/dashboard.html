@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    Your favorite feeds
+    <ul>
+        {% for fav_feed_item in fav_feed_items %}
+        <li>
+            <a href="{% url 'feeds:feed_item_detail' fid=fav_feed_item.feed_id pk=fav_feed_item.id %}">
+                {{ fav_feed_item.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
