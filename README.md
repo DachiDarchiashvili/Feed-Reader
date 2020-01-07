@@ -25,6 +25,10 @@ $ pip install -r requirements.txt
 # Dockerize
 ------
 
+## 0. Configure docker
+
+First run: `docker swarm init`
+
 ## 1. Build an image from a Dockerfile
 
 General command: `docker build -t [image_title]:[tag] [context]`
