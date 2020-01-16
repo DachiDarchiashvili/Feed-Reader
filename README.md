@@ -1,7 +1,9 @@
 # About
 
 Purpose: Coding assignment.
+
 Work duration: about 20 working hours.
+
 Requirements:
  - Feed parsing from 2 sources (for demo)
  - Feed management
