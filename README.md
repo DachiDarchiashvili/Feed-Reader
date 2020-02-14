@@ -6,6 +6,8 @@ Work duration: about 20 working hours.
 
 Requirements:
  - Feed parsing from 2 sources (for demo)
+    * http://www.nu.nl/rss/Algemeen
+    * https://feeds.feedburner.com/tweakers/mixed
  - Feed management
  - User management
  - Async workers to pull feeds
